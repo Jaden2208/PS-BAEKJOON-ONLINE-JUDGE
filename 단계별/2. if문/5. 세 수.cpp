@@ -1,4 +1,4 @@
-//10817
+// 10817
 
 #include <iostream>
 using namespace std;
