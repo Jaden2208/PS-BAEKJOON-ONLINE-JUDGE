@@ -1,4 +1,4 @@
-# 2557
+// 2557
 
 #include <iostream>
 using namespace std;

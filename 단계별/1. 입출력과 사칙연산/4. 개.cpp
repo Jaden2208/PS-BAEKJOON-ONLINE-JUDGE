@@ -1,4 +1,4 @@
-#10172
+// 10172
 
 #include <iostream>
 using namespace std;

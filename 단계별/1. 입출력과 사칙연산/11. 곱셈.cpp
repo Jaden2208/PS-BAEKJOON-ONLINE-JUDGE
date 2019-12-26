@@ -1,4 +1,4 @@
-#2588
+// 2588
 
 #include <iostream>
 using namespace std;

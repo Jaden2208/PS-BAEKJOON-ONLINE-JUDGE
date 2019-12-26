@@ -1,4 +1,4 @@
-#10718
+// 10718
 
 #include <iostream>
 using namespace std;
