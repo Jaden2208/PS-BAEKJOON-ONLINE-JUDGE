@@ -4,26 +4,23 @@
 using namespace std;
 int main(){
 	int n;
+	string result;
+
 	cin >> n;
-	string ox;
+
 	for(int i=0; i<n; i++){
-		cin >> ox;
-		bool wasO = false;
-		int score = 1;
-		int scoreSum = 0;
-		for(int j=0; j<ox.size(); j++){
-			if(ox.at(j) == 'O'){
-				if(wasO) ++score;
-				wasO = true;
-				scoreSum += score;
+		int total = 0;
+		int score = 0;
+		cin >> result;
+		for(int j=0; j<result.size(); j++){
+			if(result.at(j) == 'O'){
+				score++;
+				total += score;
 			}
-			else{
-				wasO = false;
-				score = 1;
-			}
+			else
+				score = 0;
 		}
-		cout << scoreSum << '\n';
+		cout << total << endl;
 	}
-	
 	return 0;
-} 
+}
