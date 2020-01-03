@@ -12,8 +12,8 @@ int main(){
 		int score = 1;
 		int scoreSum = 0;
 		for(int j=0; j<ox.size(); j++){
-			if(wasO) ++score; 
 			if(ox.at(j) == 'O'){
+				if(wasO) ++score;
 				wasO = true;
 				scoreSum += score;
 			}
