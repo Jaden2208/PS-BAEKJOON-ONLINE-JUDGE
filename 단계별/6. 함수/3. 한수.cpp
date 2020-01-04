@@ -10,9 +10,12 @@ bool isHan(int n){
 		arr.push_back(n%10);
 		n /= 10;
 	}
-	int gap = arr[0] - arr[1];
-	for(int i=2; i<arr.size(); i++){
-		if(arr[i-1] - arr[i] != gap) return false;
+	if(arr.size() > 1)
+	{
+		int gap = arr[0] - arr[1];
+		for(int i=2; i<arr.size(); i++){
+			if(arr[i-1] - arr[i] != gap) return false;
+		}
 	}
 	return true;
 }
