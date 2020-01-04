@@ -10,7 +10,7 @@ bool isHan(int n){
 		arr.push_back(n%10);
 		n /= 10;
 	}
-	if(arr.size() > 1)
+	if(arr.size() > 2)
 	{
 		int gap = arr[0] - arr[1];
 		for(int i=2; i<arr.size(); i++){
