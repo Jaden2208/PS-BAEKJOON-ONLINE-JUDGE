@@ -5,8 +5,7 @@ using namespace std;
 int main(){
 	char ch;
 	cin >> ch;
-	int chi = ch;
-	cout << chi;
+	cout << int(ch);
 	
 	return 0;
 }
