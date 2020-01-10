@@ -10,7 +10,7 @@ int main(){
 	for(int i=0; i<t; i++){
 		cin >> x >> y;
 		int distance = y - x;
-		for(unsigned long j=1; j<=46341; j++){
+		for(unsigned long j=1; true; j++){
 			if(j*j >= distance){
 				cout << (j-1)*2+1 << '\n';
 				break;

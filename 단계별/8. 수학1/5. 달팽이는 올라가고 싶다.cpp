@@ -13,7 +13,6 @@ int main(){
 	v -= a;
 	int day = v/(a-b);
 	if(v%(a-b) != 0) ++day;
-	if(day == 0) ++day;
 	cout << day + 1;
 	
 	return 0;
