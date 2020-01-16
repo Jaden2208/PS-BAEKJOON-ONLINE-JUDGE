@@ -8,7 +8,6 @@ int main(){
 	int result = 0;
 	for(int i=0; i<n; i++){
 		result = i;
-		int tmp = i;
 		for(int t=i; t>0; t/=10){
 			result += t%10;
 		}

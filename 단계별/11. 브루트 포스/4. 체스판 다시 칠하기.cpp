@@ -13,7 +13,7 @@ int main(){
 	int minCnt = m*n;
 	for(int w=0; w<2; w++){
 		if(w==0) check = 'W';
-		if(w==1) check = 'B';
+		else check = 'B';
 		for(int k=0; k<n-7; k++){
 			for(int l=0; l<m-7; l++){
 				int cnt = 0;
