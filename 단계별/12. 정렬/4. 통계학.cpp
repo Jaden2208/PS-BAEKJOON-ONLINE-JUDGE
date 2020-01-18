@@ -8,7 +8,7 @@ int main(){
 	int n, cnt[8001] = {0}, curIdx = 0, maxCnt = 0, mcv;
 	cin >> n;
 	int arr[n];
-	float sum = 0;
+	double sum = 0;
 	
 	for(int i=0; i<n; i++){
 		cin >> arr[i];
