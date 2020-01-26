@@ -1,11 +1,11 @@
-// 15650
+// 15652
 
 #include <iostream>
 using namespace std;
 
-int n, m; // n까지 m개 
-bool visited[9]; // 방문했는지  
-int arr[9]; // 출력할 결과  
+int n, m;
+bool visited[9];
+int arr[9];
 
 void printAll(){
 	for(int i=0; i<m; i++){
@@ -19,20 +19,15 @@ void recur(int cnt, int t){
 		printAll();
 		return;
 	}
-	for(int i=t+1; i<=n; i++){
-		if(!visited[i]){
-			arr[cnt] = i;
-			visited[i] = true;
-			recur(cnt+1, i);
-			visited[i] = false;
-		}
+	for(int i=t; i<=n; i++){
+		arr[cnt] = i;
+		recur(cnt + 1, i);
 	}
 }
-
 int main(){
 	cin >> n >> m;
-
-	recur(0, 0); 
+	
+	recur(0, 1);
 	
 	return 0;
 }
