@@ -21,6 +21,7 @@ void dfs(int current, int cnt){
 			else teamLink.push_back(i);
 		}
 		
+		
 		int sStat = 0;
 		int lStat = 0;
 		for(int i=0; i<n/2; i++){
