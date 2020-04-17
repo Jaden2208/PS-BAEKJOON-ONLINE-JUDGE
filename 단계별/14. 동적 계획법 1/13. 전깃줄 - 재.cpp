@@ -26,6 +26,5 @@ int main(){
 	
 	cout << n - maxCnt;
 	
-	
 	return 0;
 }
