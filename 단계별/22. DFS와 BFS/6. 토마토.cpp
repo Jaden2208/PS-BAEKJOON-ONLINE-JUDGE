@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <queue>
-#include <algorithm>
 using namespace std;
 
 int m, n;
@@ -38,7 +37,7 @@ void bfs(){
 			box[nextX][nextY] = box[xx][yy] + 1;
 		}
 	}
-	days = max(days, box[xx][yy] - 1);
+	days = box[xx][yy] - 1;
 	
 }
 
